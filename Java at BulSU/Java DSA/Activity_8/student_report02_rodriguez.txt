@@ -1,0 +1,11 @@
+=== Student Report ===
+Student 1
+Name  : Rodriguez, Miles
+Course: BSIT
+Grade : 99
+-------------------------
+Student 2
+Name  : Rodriguez, Koi
+Course: BSIT
+Grade : 100
+-------------------------

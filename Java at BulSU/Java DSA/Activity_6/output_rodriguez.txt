@@ -1,0 +1,2 @@
+Hello, this is my first line using BufferedWriter!
+BufferedWriter makes writing files easy and fast.
