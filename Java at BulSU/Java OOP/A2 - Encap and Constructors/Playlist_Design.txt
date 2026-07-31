@@ -1,0 +1,22 @@
+Part A. Design Analysis & Encapsulation Reasoning
+
+1. Playlist Fields
+a. playlistName (String)
+b. createdYear (int)
+c. songTitles (List<String>)
+
+2. Validation Rules
+a. playlistName (String)
+- Name cannot be null or blank. If so, an IllegalArgumentException would be thrown.
+b. createdYear (int) 
+- The year must be between 1900 and 2027 only. Years before 1900 and after 2026 would cause an IllegalArgumentException. 
+
+3. Why the method that returns the list of items must not simply return the field itself?
+- Returning the original list would also allow us to edit the original one through its reference. We need to create a copy of the list so that we can freely edit without changing the original list.
+
+4. Access Modifiers
+a. Private: playlistName, createdYear, songTitles
+- states such as the playlistName, createdYear, and the list of songTitles must be declared private to protect them from being edited through an invalidated way. 
+
+b. Public: getters, setters, and constructors
+- Methods must be declared public so that they can still be accessed and used on other classes.
