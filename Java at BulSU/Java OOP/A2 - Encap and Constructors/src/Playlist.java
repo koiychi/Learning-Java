@@ -72,8 +72,7 @@ public class Playlist {
     }
 
     public Playlist(Playlist other) {
-        this.playlistName = other.playlistName;
-        this.createdYear = other.createdYear;
+        this(other.playlistName, other.createdYear);
         this.songTitles = new ArrayList<>(other.songTitles); 
     }
 }
