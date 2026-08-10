@@ -1,5 +1,7 @@
-public interface Maintainable{
+public interface Maintainable{ //Interface B
     String getMaintenanceSchedule();
-    boolean needsStage();
+    default boolean needsStage() {
+        return false;
+    }
     
 } 

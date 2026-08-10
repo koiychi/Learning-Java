@@ -1,4 +1,6 @@
-public interface Performable {
+public interface Performable { //Interface A
     void perform();
-    boolean needsStage();
+    default boolean needsStage() {
+        return true;
+    }
 }

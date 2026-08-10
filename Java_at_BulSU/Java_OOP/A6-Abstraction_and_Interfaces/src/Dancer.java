@@ -1,12 +1,17 @@
 public class Dancer implements Performable, Maintainable {
     private String stageName;
 
+    public Dancer(String stageName) {
+        setStageName(stageName);
+    }
+
+    @Override
     public boolean needsStage() {
-        return false;
+        return true;
     }
 
     public void perform() {
-
+        System.out.println("Sumasayaw si " + stageName + " ng Galaw Pilipinas.");
     }
 
     public String getMaintenanceSchedule() {

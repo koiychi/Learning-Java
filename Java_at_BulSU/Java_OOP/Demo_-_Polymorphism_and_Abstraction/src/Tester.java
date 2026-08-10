@@ -22,7 +22,7 @@ public class Tester {
         // Manager m2 = (Manager) m1;
         // System.out.println(m1.getStatus());
 
-        //UPCASTING  super < subclass
+        //UPCASTING  super -< subclass
         Employee i1 = new Intern("Rhaine", "Intern-001", 500, 22);
         System.out.println(i1.toString());
 

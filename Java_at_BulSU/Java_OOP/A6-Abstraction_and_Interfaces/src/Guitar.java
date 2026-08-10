@@ -1,29 +1,14 @@
 public class Guitar extends Instrument implements FeaturedAct {
     private int numStrings;
-    public String produceSound() {
-        return "Kring kring";
-    }
 
-    public String getBillingName() {
-        return "Billing";
-    }
-
-    public boolean needsStage(){
-        return true;
-    }
-
-    public void perform() {
-        System.out.println("Performing guitar...");
-    }
-
-    public String getMaintenanceSchedule() {
-        return "Performance schedule";
-    }
-    
-
+    //CONSTRUCTOR
     public Guitar(String name, int numStrings) {
         super(name);
         setNumStrings(numStrings);
+    }
+
+    public Guitar() {
+        this("Guitar Player", 6);
     }
 
     public void setNumStrings(int numStrings) {
@@ -36,6 +21,38 @@ public class Guitar extends Instrument implements FeaturedAct {
     public String toString() {
         return "Sound of Guitar: " + produceSound();
     }
+    
+    //INHERITED METHODS
+    @Override
+    public String produceSound() {
+        return "Kring kring (strumming)";
+    }
+
+    //From FeaturedAct
+    @Override
+    public String getBillingName() {
+        return "Billing";
+    }
+
+    //From Performable interface
+    @Override
+    public boolean needsStage(){
+        return true;
+    }
+
+    @Override
+    public void perform() {
+        System.out.println("Tumutugtog si " + getName() + " ng guitar niya na may " + numStrings + " strings. Amazing!");
+    }
+
+    //From Maintainable interface
+    @Override
+    public String getMaintenanceSchedule() {
+        return "Performance schedule";
+    }
+    
+
+    
 
 
 }
