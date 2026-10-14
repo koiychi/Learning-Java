@@ -1,7 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
 
-public class Components {
+public class Components extends Layouts {
     public static void main (String[] koiychi) {
 
         //CONTAINERS ----------------------------------------------------------------
