@@ -1,8 +1,8 @@
 import javax.swing.*;
 import java.awt.*;
 
-public class Components extends Layouts {
-    public static void main (String[] koiychi) {
+public class Components extends JFrame {
+    public Components () {
 
         //CONTAINERS ----------------------------------------------------------------
 

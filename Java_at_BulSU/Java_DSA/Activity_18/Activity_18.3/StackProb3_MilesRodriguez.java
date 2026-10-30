@@ -1,6 +1,6 @@
 import java.util.Stack;
 
-public class UndoRecentActions_MilesRodriguez {
+public class StackProb3_MilesRodriguez {
     public static void main(String[] koi) {
         Stack<String> actions = new Stack<>();
 

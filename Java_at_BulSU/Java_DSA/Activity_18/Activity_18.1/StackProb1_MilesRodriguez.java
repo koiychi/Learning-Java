@@ -1,5 +1,5 @@
 import java.util.Stack;
-public class StudentNameStack_MilesRodriguez {
+public class StackProb1_MilesRodriguez {
     public static void main(String[] koi) {
         Stack<String> students = new Stack<>();
 

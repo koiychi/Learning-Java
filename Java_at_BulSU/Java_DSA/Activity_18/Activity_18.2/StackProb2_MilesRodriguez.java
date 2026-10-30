@@ -1,6 +1,6 @@
 import java.util.Stack;
 
-public class BrowserBackHistory_MilesRodriguez {
+public class StackProb2_MilesRodriguez {
     public static void main(String[] koi) {
         Stack<String> browsingHistory = new Stack<>();
         

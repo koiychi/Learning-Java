@@ -1,8 +1,8 @@
 import javax.swing.*;
 import java.awt.*;
 
-public class Layouts {
-    public static void main(String [] koiychi) {
+public class Layouts extends JFrame {
+    public Layouts() {
 
         //Creating the Window
         JFrame f = new JFrame("Layout Managers");
@@ -71,4 +71,5 @@ public class Layouts {
         //----------------------------------------------------------//
 
     }
+
 }
